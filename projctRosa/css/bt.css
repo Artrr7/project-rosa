@@ -1,0 +1,48 @@
+.btn {
+  position: relative;
+  padding: 0.9rem 0.1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  min-width: 200px;
+  margin-left: 5%;
+  z-index: 1;
+}
+
+.btn:hover {
+    background-color: white;
+    color: plum;
+}
+
+.neon-pulse {
+  background: #D96C94;
+  border: 1px solid plum;
+  overflow: visible;
+}
+
+.neon-pulse::before,
+.neon-pulse::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border: 1px solid plum;
+  border-radius: inherit;
+  animation: pulseOut 5s ease-out infinite;
+  opacity: 0;
+}
+
+@keyframes pulseOut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}

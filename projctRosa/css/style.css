@@ -1,0 +1,105 @@
+ html {
+     scroll-behavior: smooth;
+ }
+
+ body {
+     font-family: "Montserrat", sans-serif;
+     background-color: #F2D5E5;
+ }
+
+ a,
+ p,
+ ul {
+     font-size: calc(1.4rem + 2px);
+     text-decoration: none;
+ }
+
+ h1 {
+     display: inline-block;
+     background-color: #8d3950;
+     color: white;
+     padding: 0 10px;
+     border-radius: 15px 0;
+ }
+
+ h4 {
+     font-weight: bold;
+     color: #8d3950;
+ }
+
+
+ section {
+     scroll-margin-top: 100px;
+     padding: 60px 0;
+     color: #D9B4BE;
+ }
+
+
+ video {
+     display: block;
+     margin-bottom: 100px;
+     margin-left: auto;
+     margin-right: auto;
+     width: 80%;
+     border-radius: 25px;
+ }
+
+ .img-banner {
+     padding-top: 200px;
+ }
+
+ .custom_nav-container {
+     position: fixed;
+     width: 100%;
+     font-weight: bold;
+     background-color: #D9B4BE;
+     transition: background-color 0.5s ease, box-shadow 0.5s ease;
+     z-index: 1;
+ }
+
+ .custom_nav-container .navbar-nav .nav-link {
+     padding: 5px 20px;
+     text-transform: uppercase;
+     font-size: 1.1rem;
+     color: white;
+     border-radius: 5px;
+     transition: all 0.3s;
+ }
+
+ .container-custom {
+     border-radius: 150px 0;
+     background-color: #D96C94;
+     color: white;
+ }
+
+ .carousel-inner {
+     background-color: #E83E8C;
+     min-height: 220px;
+ }
+
+ .chart-container {
+     position: relative;
+     width: 100%;
+     max-width: 800px;
+     margin: auto;
+ }
+
+ .carousel-inner {
+     background-color: #D96C94;
+     font-weight: 200px;
+ }
+
+ .reveal {
+     opacity: 0;
+     transform: translateY(30px);
+     transition: opacity 0.6s ease, transform 0.6s ease;
+ }
+
+ .reveal.active {
+     opacity: 1;
+     transform: translateY(0);
+ }
+
+ footer {
+     background-color: #D9B4BE;
+ }

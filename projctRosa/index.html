@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Setembro Amarelo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bt.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xxl navbar-dark py-4 custom_nav-container">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/img/LogoRoxa.png" alt="" class="img-fluid"
+                    style="max-width:150px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-light" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#dados">Dados</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#prevencao">Prevenção</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#consulta">Consulta</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="img-banner container">
+        <div class="justify-content-center">
+            <img src="/img/ChatGPT Image 1 de out. de 2025, 12_16_34.png" class="img-fluid" alt="">
+        </div>
+    </div>
+    <section class="mt-5 reveal">
+        <div id="carouselOutubroRosa" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselOutubroRosa" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselOutubroRosa" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselOutubroRosa" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner text-center">
+                <div class="carousel-item active">
+                    <div class="fs-3 p-3 text-white">
+                        O câncer de mama é o tipo mais comum entre as mulheres no Brasil. <br>
+                        Segundo o INCA, mais de 66 mil novos casos são esperados por ano. <br>
+                        <span class="fw-bold">A detecção precoce aumenta muito as chances de cura.</span>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <p class="fs-3 p-3 text-white">
+                        O autoexame é um gesto simples e importante. <br>
+                        <span class="fw-bold">Consultas médicas e exames regulares são fundamentais para a
+                            prevenção.</span>
+                    </p>
+                </div>
+                <div class="carousel-item">
+                    <p class="fs-3 fw-bold p-3 text-white">
+                        O Outubro Rosa lembra: cuidar de si é um ato de amor. Compartilhe essa causa!
+                    </p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselOutubroRosa"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselOutubroRosa"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section id="dados" class="py-5 reveal">
+        <div class="container text-center text-dark">
+            <h1 class="one mb-5">Análises Estatísticas</h1>
+            <p>Dados de saúde mental e prevenção, com destaque para a campanha <span class="fw-bold text-pink">Outubro
+                    Rosa</span>.</p>
+            <div class="chart-container my-4" style="height:400px;">
+                <canvas id="breastCancerChart"></canvas>
+            </div>
+            <p>O <strong class="text-pink">Outubro Rosa</strong> é uma campanha mundial de
+                conscientização sobre prevenção e diagnóstico precoce do câncer de mama.</p>
+        </div>
+    </section>
+    <section id="sobre" class="reveal">
+        <div class="container-custom py-5">
+            <div class="text-center">
+                <h1 class="two my-5">Sobre</h1>
+            </div>
+            <div class="col-12">
+                <div class="text-center mb-5">
+                    <p>
+                        O <strong>Outubro Rosa</strong> é uma campanha global que incentiva a conscientização sobre o
+                        câncer de mama.
+                    </p>
+                </div>
+                <div class="row g-4 text-center">
+                    <div class="col-12 col-md-4">
+                        <div class="p-4 h-100  ">
+                            <h4>AUTOEXAME</h4>
+                            <p>Conhecer o próprio corpo é essencial. Realize o autoexame regularmente para identificar
+                                alterações e buscar ajuda médica rapidamente.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="p-4 h-100  ">
+                            <h4>EXAMES DE ROTINA</h4>
+                            <p>Consultas médicas periódicas e exames como a mamografia ajudam na detecção precoce do
+                                câncer de mama, aumentando as chances de tratamento eficaz.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="p-4 h-100  ">
+                            <h4>VIDA SAUDÁVEL</h4>
+                            <p>Prática regular de exercícios, alimentação equilibrada e moderação no consumo de álcool,
+                                contribui para a prevenção de doenças, incluindo o câncer de mama.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <video class="my-5 reveal" controls="" autoplay="" name="media">
+        <source
+            src="https://www.gov.br/saude/pt-br/campanhas-da-saude/2024/outubro-rosa/acesse-as-pecas/filme-horizontal-campanha-outubro-rosa-18mb-mp4"
+            type="video/mp4">
+    </video>
+    <section id="prevencao" class="reveal">
+        <div class="container-custom py-5">
+            <div class="row g-4 align-items-center">
+                <div class="col-12 col-md-3 text-center">
+                    <img src="/img/ChatGPT Image 1 de out. de 2025, 08_49_04.png" alt="Outubro Rosa"
+                        class="img-fluid  ">
+                </div>
+                <div class="col-12 col-md-3 p-3  ">
+                    <h4 class="fw-bold">AUTOEXAME</h4>
+                    <p>Reserve alguns minutos do dia para conhecer seu corpo e realizar o autoexame.</p>
+                    <h4 class="fw-bold">PREVENÇÃO</h4>
+                    <p>Consultas periódicas e exames permitem o <strong>diagnóstico precoce</strong> do câncer de mama.
+                    </p>
+                </div>
+                <div class="col-12 col-md-3 p-3  ">
+                    <h4 class="fw-bold">CONSCIENTIZAÇÃO</h4>
+                    <p>Compartilhar informações corretas ajuda a salvar vidas e fortalecer o Outubro Rosa.</p>
+                    <h4 class="fw-bold">APOIO</h4>
+                    <p>Seja uma rede de apoio: ofereça solidariedade a quem enfrenta o câncer de mama.</p>
+                </div>
+                <div class="col-12 col-md-3 p-3  ">
+                    <h4 class="fw-bold">SAÚDE EM DIA</h4>
+                    <p>Cuidar da saúde física e mental é um ato de amor consigo mesmo.</p>
+                    <h4 class="fw-bold">ESPALHE A CAUSA</h4>
+                    <p>Use o laço rosa, incentive familiares e amigos a participarem e fortaleça a campanha.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="consulta" class="reveal">
+        <div class="container-fluid p-5">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <h1 class="one my-5">Consulta</h1>
+                </div>
+                <div class="col-12 col-md-6   p-4">
+                    <h4 class="py-3 fw-semibold">
+                        Unidades Sesc Saúde disponibilizam exames totalmente gratuitos
+                    </h4>
+                    <p class="text-dark">
+                        No Sesc você conta com profissionais altamente qualificados e atendimento humanizado e
+                        acolhedor, equipamentos de última geração e resultados confiáveis.
+                        <br><br>
+                        Para agendar o seu exame no Sesc Centro de Excelência em Saúde, em Belo Horizonte, acesse o
+                        Portal de Serviços. É necessário pedido médico para a realização dos exames.
+                    </p>
+                    <ul class="text-dark">
+                        <li><strong>Passo a passo para agendar:</strong></li>
+                        <li>Crie e/ou acesse a sua conta</li>
+                        <li>Clique em “Realizar agendamento de Saúde”</li>
+                        <li>Escolha a especialidade, a data e o horário do seu interesse conforme a disponibilidade</li>
+                    </ul>
+                    <i class="text-dark d-block my-3">
+                        Se tiver dúvidas sobre como agendar no sistema, assista o vídeo.
+                        <br>
+                        Após realizar o agendamento você receberá um e-mail com o valor do exame.
+                        <br>
+                        O Sesc Centro de Excelência fica localizado:
+                        <strong>Rua Viana do Castelo, 645, Bairro São Francisco.</strong>
+                    </i>
+                    <div class="text-center py-4">
+                        <a href="https://sescmg.com.br/servico/mamografia/" target="_blank">
+                            <button type="button" class="btn neon-pulse px-4 py-2">
+                                <span>Saiba Mais</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 text-center">
+                    <h4 class="fw-semibold mb-3">Veja o tutorial de Agendamento</h4>
+                    <div class="ratio ratio-16x9 overflow-hidden">
+                        <iframe src="https://www.youtube.com/embed/uJKU5lqoaJs" title="Tutorial Agendamento"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5 reveal">
+        <div class="container text-center">
+            <div class="my-3">
+                <img src="/img/LogoRoxa.png" alt="" class="img-fluid" style="width:150px;">
+                <img src="/img/ChatGPT Image 30 de set. de 2025, 16_06_25.png" class="img-fluid" style="width: 150px;"
+                    alt="">
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="/js/chart.js"></script>
+    <script src="/js/reveal.js"></script>
+</body>
+
+</html>
